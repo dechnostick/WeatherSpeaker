@@ -67,8 +67,8 @@ Public Class Form1
     End Sub
 
     Private Sub Speak(ByVal o As Stream)
-        Dim player As New Media.SoundPlayer(o)
-        player.PlaySync()
+        Dim player = New SoundPlayer(o)
+        player.Play()
         player.Dispose()
     End Sub
 
